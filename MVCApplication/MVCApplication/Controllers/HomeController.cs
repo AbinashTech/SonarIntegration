@@ -11,14 +11,8 @@ namespace MVCApplication.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            if (true)
-            {
-
-            }
-            else
-            {
+           
             
-            }
         }
 
         public IActionResult Index()
