@@ -6,4 +6,8 @@ namespace MVCApplication.Models
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
     }
+    
+    public class error()
+    {
+    }
 }
