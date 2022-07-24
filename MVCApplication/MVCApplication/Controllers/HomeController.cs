@@ -11,7 +11,7 @@ namespace MVCApplication.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            if (trure)
+            if (true)
             {
             }
             else
