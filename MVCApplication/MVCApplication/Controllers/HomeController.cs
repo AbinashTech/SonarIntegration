@@ -17,15 +17,7 @@ namespace MVCApplication.Controllers
         public IActionResult Index()
         {
             return View();
-            if(true)
-            {
-            }
-            else
-            {
-            
-            }
-            
-            
+                
         }
 
         public IActionResult Privacy()
