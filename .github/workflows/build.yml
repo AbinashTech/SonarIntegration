@@ -62,7 +62,7 @@ jobs:
           # on the project dashboard in SonarCloud.
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"AbinashTech_SonarIntegration" /o:"abinashtech" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          dotnet build MVCApplication.sln
-          dotnet test MVCApplication.sln --collect "Code Coverage"
+          dotnet build 'MVCApplication\MVCApplication.sln'
+          dotnet test 'MVCApplication\MVCApplication.sln' --collect "Code Coverage"
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
   
